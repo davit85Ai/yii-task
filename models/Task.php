@@ -75,11 +75,11 @@ class Task extends BaseModel
         $dataProvider = new ActiveDataProvider([
             'query' => self::find(),
             'pagination' => [
-                'pageSize' => 2
+                'pageSize' => 20
             ],
             'sort' => [
                 'defaultOrder' => [
-                    'id' => SORT_DESC,
+                    'title' => SORT_ASC,
                 ]
             ],
         ]);
